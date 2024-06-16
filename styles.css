@@ -1,0 +1,845 @@
+/* Styles.css */
+@font-face {
+    font-family: 'OPTICaslonFive';
+    src: url('fonts/OPTICaslonFive.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'OPTICaslonFive', Arial, sans-serif;
+    background-color: #e2ddda;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0; 
+}
+
+nav {
+    background-color: #e2ddda;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav .logo img {
+    height: 50px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 5px 2px 3px;
+    text-decoration: none;
+    color: #796e42;
+    font-size: 18px; 
+}
+
+nav li a:hover {
+    color: rgb(54, 41, 28);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 20px;
+}
+
+
+main {
+    padding: 20px;
+    padding-top: 60px; 
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* StyliS for the section content-------------------------------------- */
+
+section {
+    padding: 20px;
+    text-align: center; 
+}
+section h1 {
+    color: #605734; 
+    font-size: 36px; 
+}
+
+section p {
+    color: #6d6969; 
+    font-size: 18px; 
+}
+
+
+/* Styles for the album section in INDEX PAGE ----------------------------------------*/
+.album-section {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .album-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-left: 250px;
+    color: #796e42;
+  }
+
+.album-section img {
+    max-width: 60%;
+}
+
+/* Styles for the stream button index page code----------------------------------------- */
+.stream-button {
+    cursor: pointer;
+    color: #796e42;
+    position: relative;
+    padding: 10px 20px;
+    background: transparent; 
+    font-size: 24px;
+    border: none; 
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.stream-button:after,
+.stream-button:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+
+.stream-button:after {
+    top: -1px;
+    left: -1px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+}
+
+.stream-button:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.stream-button:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.stream-button:hover:before,
+.stream-button:hover:after {
+    width: 100%;
+    height: 100%;
+} 
+
+/* CSS for footer ------------------------------------------ */
+
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+
+main {
+    margin-bottom: 50px; 
+}
+
+/* album  lIST PAGE styles CODE--------------------------------------- */
+
+
+#albumList {
+    padding: 20px;
+}
+
+.album {
+    width: calc(33.33% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    float: left; 
+    position: relative;
+}
+
+.album img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.album:hover img {
+    transform: scale(1.05);
+}
+
+.album button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+    color: #796e42;
+    font-family: 'OPTICaslonFive'; 
+    font-size: 20px; 
+    padding: 8px 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.album:hover button {
+    opacity: 1;
+    color: #36321e; 
+    font-family: 'OPTICaslonFive'; 
+    font-size: 30px; 
+    background-color: rgba(233, 229, 224, 0.726);
+    padding: 5px 10px;
+    transition: background-color 0.3s; 
+    width: 90%; 
+}
+
+
+/* index SSTORE products Styles CODES------------------------------- */
+
+.store-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.store-title {
+    text-align: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 10px; 
+    text-align: center;
+}
+
+.product img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.product img {
+    transition: transform 0.3s ease; 
+}
+
+.product img:hover {
+    transform: scale(1.1); 
+}
+
+
+/* MUSIC VIDEO STYLES CODES--------------------------- */
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.video-container {
+    display: inline-block;
+    width: 25%; 
+    text-align: center;
+    margin: 10px; 
+}
+
+.video-container img {
+    width: 300px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.video-container img:hover {
+    transform: scale(1.1); 
+}
+
+/* ALBUM PAGES cSS CODES ---------------------------------- */
+
+.albumCover-view {
+        max-width: 400px; 
+        height: auto; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
+    margin-bottom: 10px; 
+}
+
+.album-detail {
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.album-cover-container {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    margin-top: 50px;
+
+}
+
+.tracklist {
+    flex: 1; 
+}
+
+
+.tracklist ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.tracklist ul li {
+    margin-bottom: 10px; 
+    padding-bottom: 5px; 
+    border-bottom: 1px solid #ccc; 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SIGN UP  pages DESIGN STYLESSS ----------------*/
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e9e6d6;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.SignupTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #796e42;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #443312;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-bottom-color: #ffffff;
+}
+
+.customButton {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #4a3e34;
+    border: 2px solid #695948; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.customButton:hover {
+    background-color: #d2cec1;
+}
+
+.customButton:focus {
+    outline: none; 
+}
+
+
+/* playlist page -----------------------------*/
+
+
+.playlist-main {
+    padding: 100px 20px 20px; 
+    text-align: center;
+}
+
+.playlist-form {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #d9cdc4;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.songs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.song-category {
+    text-align: left;
+    flex-basis: calc(33.33% - 20px); 
+}
+
+.song-category h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.song-category label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.playlist-button {
+    background-color: #796e42;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.playlist-button:hover {
+    background-color: #5d5432;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* css styles for the result page-------------------- */
+
+.result-container {
+    display: none;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #d9cdc4;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.result-container img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.result-container ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.result-container li {
+    margin-bottom: 10px;
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.result-buttons button {
+    background-color: #796e42;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.result-buttons button:hover {
+    background-color: #5d5432;
+}
+
+/* overlay image style in playlist result css --------------------*/
+
+ .overlay-img {
+    transform: scale(1.1) skew(-10deg);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+    max-width: 200%;
+}
+
+.overlay-img:hover {
+    transform: rotate(-5deg) scale(1.2); 
+}
+
+.overlay-img:hover {
+    transform: scale(1.2) skew(-10deg); 
+}
+
+/* Product MERCH Page Styles------------------------- */
+
+.custom-products-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-product-section {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.custom-product-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.custom-product {
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.custom-product img {
+    max-width: 90%;
+    height: auto;
+}
+
+.custom-product h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.custom-product p {
+    font-size: 18px;
+    color: #666;
+}
+
+.custom-product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.custom-product img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-product a, .add-to-cart{
+    display: block;
+    background-color: #3c371f; 
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+.custom-product a:hover, .add-to-cart:hover {
+    background-color: #5e6d7d; 
+}
+
+
+/* PRODUCT FOLDER PAGES EACH PROD PAGE ---------------- */
+
+.product-details-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.product-details img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    color: #604f2d;
+}
+
+.product-details .price {
+    font-size: 20px;
+    color: #fff;
+}
+
+.quantity-selection {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-selection span {
+    margin-right: 10px;
+}
+
+.quantity-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    /* display: block; */
+    margin: 20px 30px ;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+/* CART  Styless----------------------------- */
+
+.cart-main {
+    margin-top: 1.5%;
+    padding: 20px;
+}
+
+.cart-list {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-total {
+    font-size: 1.2em;
+}
+
+#checkout {
+    background-color: #533e2971;
+    color: #fff;
+    padding: 10px;
+    border: #443312;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+}
+
+#checkout:hover {
+    background-color: #564109;
+}
+
+
+.delete-cart-item {
+    background-color: #ff6607;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-cart-item {
+    background-color: #f05766;
+    margin-left: 10px;
+}
+
+.delete-cart-item:hover {
+    background-color: #8e2832;
+}
+
+/* quiz page style -------------------------  */
+
+.album-container, .quiz-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #e3ddcb;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.album-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    /* margin-bottom: 5px; */
+}
+
+.album-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.album-container p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.quizBtn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.quiz-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #715a32e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #4c3c1c;
+}
+
+.quiz-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.choices label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.choices input {
+    margin-right: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#backBtn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #6c757d;
+}
+
+#backBtn:hover {
+    background-color: #5a6268;
+}

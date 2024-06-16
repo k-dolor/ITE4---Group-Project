@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Taylor Swift Logo" /></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="musicvideo.html">Music Videos</a></li>
+                <li><a href="tour.html">Tour Dates</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/TaylorSwift/"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com/taylorswift/"><img src="instagram.png" alt="insta" /></a>
+                <a href="https://twitter.com/taylorswift13"><img src="x.png" alt="twitter" /></a>
+                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"><img src="spotify.png" alt="Spotify" /></a>
+                <a href="https://www.youtube.com/user/taylorswift"><img src="youtube.png" alt="YouTube" /></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="SignupTitle">Sign-Up Now to Receive Updates</h1>
+        <hr>
+        <span id="output"></span>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="honorific">Title:</label>
+                <select name="title" id="honorific">
+                    <option value="Mr">Mr.</option>
+                    <option value="Ms">Ms.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="middlename">Middle Name:</label>
+                <input type="text" id="middlename">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+            </div>
+            <div class="form-button">
+                <input type="button" onClick="submitForm()" value="Submit" class="customButton">
+            </div>
+        </form>
+        
+        <div id="output"></div>
+        
+        <hr>
+        <br>
+    </main>
+</body>
+</html>

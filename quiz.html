@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Taylor Swift Logo" /></a>
+            </div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="musicvideo.html">Music Videos</a></li>
+                <li><a href="tour.html">Tour Dates</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/TaylorSwift/"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com/taylorswift/"><img src="instagram.png" alt="insta" /></a>
+                <a href="https://twitter.com/taylorswift13"><img src="x.png" alt="twitter" /></a>
+                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"><img src="spotify.png" alt="Spotify" /></a>
+                <a href="https://www.youtube.com/user/taylorswift"><img src="youtube.png" alt="YouTube" /></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="album-container">
+        <h1>The Taylor Swift Quiz</h1>
+        <img src="hd.png" alt="Folklore Album Cover">
+        <p>"It's me, Hi! Swiftie, are you ready to test your knowledge on Taylor and her music?<br> Shake it off and let's begin the quiz. 
+        You know all too well that it's going to be a <br>wildest dream come true.  So, are you ready for it? Let's go, fearless Swiftie, 
+        and see <br> if you can ace this challenge like the true fan you are!"</p>
+        <button id="startQuizBtn" class="quiz-button">Take Quiz</button>
+    </div>
+
+    <div class="quiz-container" id="quizContainer" style="display: none;">
+        <h1>Taylor Swift Album Quiz</h1>
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <label>1. Which song contains the lyric: "I swear I don't love the drama, it loves me."?</label>
+                <div class="choices">
+                    <label><input type="radio" name="q1" value="Karma"> Karma</label>
+                    <label><input type="radio" name="q1" value="End Game"> End Game</label>
+                    <label><input type="radio" name="q1" value="Delicate"> Delicate</label>
+                </div>
+                <div class="quizBtn-container">
+                <button type="button" class="quiz-button" onclick="nextQuestion(1)">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question2" style="display: none;">
+                <label>2. Which album marks Taylor Swift's first complete ownership of her music rights?</label>
+                <div class="choices">
+                    <label><input type="radio" name="q2" value="Lover"> Lover</label>
+                    <label><input type="radio" name="q2" value="Folklore"> Fearless</label>
+                    <label><input type="radio" name="q2" value="Reputation"> Reputation</label>
+                </div>
+              <div class="quizBtn-container">
+                <button type="button" class="quiz-button" onclick="prevQuestion(2)">Previous</button>
+                <button type="button" class="quiz-button" onclick="nextQuestion(2)">Next</button>
+              </div>
+            </div>
+            <div class="question" id="question3" style="display: none;">
+                <label>3. Which album includes the song "New Romantics"?</label>
+                <div class="choices">
+                    <label><input type="radio" name="q3" value="1989"> 1989 (Taylor's Version)</label>
+                    <label><input type="radio" name="q3" value="Reputation"> Midnights</label>
+                    <label><input type="radio" name="q3" value="Speak Now"> Red (Taylor's Version)</label>
+                </div>
+                <div class="quizBtn-container">
+                    <button type="button" class="quiz-button" onclick="prevQuestion(3)">Previous</button>
+                    <button type="button" class="quiz-button" onclick="nextQuestion(3)">Next</button>
+                  </div>
+            </div>
+            <div class="question" id="question4" style="display: none;">
+                <label>4. "Long Live" is a song from which album?</label>
+                <div class="choices">
+                    <label><input type="radio" name="q4" value="Speak Now"> Speak Now (Taylor's Version)</label>
+                    <label><input type="radio" name="q4" value="Fearless"> Fearless (Taylor's Version)</label>
+                    <label><input type="radio" name="q4" value="Red"> Red (Taylor's Version)</label>
+                </div>
+                <div class="quizBtn-container">
+                    <button type="button" class="quiz-button" onclick="prevQuestion(4)">Previous</button>
+                    <button type="button" class="quiz-button" onclick="nextQuestion(4)">Next</button>
+                  </div>
+            </div>
+            <div class="question" id="question5" style="display: none;">
+                <label>5. Which album is the song "exile" from?</label>
+                <div class="choices">
+                    <label><input type="radio" name="q5" value="Folklore"> Folklore</label>
+                    <label><input type="radio" name="q5" value="Lover"> Lover</label>
+                    <label><input type="radio" name="q5" value="Evermore"> Evermore</label>
+                </div>
+                <button type="button" class="quiz-button" onclick="checkAnswers()">Submit</button>
+            </div>
+        </form>
+        <div id="result"></div>
+        <button id="backBtn" class="quiz-button" style="display: none;" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+    </main>
+</html>

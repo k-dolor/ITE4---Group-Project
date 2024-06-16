@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Playlist">
+    <title>Taylor Swift Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Taylor Swift Logo" /></a>
+            </div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="musicvideo.html">Music Videos</a></li>
+                <li><a href="tour.html">Tour Dates</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/TaylorSwift/"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com/taylorswift/"><img src="instagram.png" alt="insta" /></a>
+                <a href="https://twitter.com/taylorswift13"><img src="x.png" alt="twitter" /></a>
+                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"><img src="spotify.png" alt="Spotify" /></a>
+                <a href="https://www.youtube.com/user/taylorswift"><img src="youtube.png" alt="YouTube" /></a>
+            </div>
+        </nav>
+    </header>
+    <main class="playlist-main">
+        <h1>Create Your Taylor Swift Playlist</h1>
+        <form class="playlist-form" id="playlistForm" onsubmit="generatePlaylist(); return false;">
+            <label>Select at least 5 songs:</label><br>
+            <div class="songs-list">
+                <div class="song-category">
+                    <h2>Midnights (3am Edition)</h2>
+                    <label><input type="checkbox" value="Lavender Haze"> Lavender Haze</label>
+                    <label><input type="checkbox" value="Maroon"> Maroon</label>
+                    <label><input type="checkbox" value="Anti-Hero"> Anti-Hero</label>
+                    <label><input type="checkbox" value="Sweet Nothing"> Sweet Nothing</label>
+                    <label><input type="checkbox" value="Midnight Rain"> Midnight Rain</label>
+                    <label><input type="checkbox" value="Hit's Different"> Hit's Different</label>
+                    <label><input type="checkbox" value="You're Losing Me"> You're Losing Me</label>
+
+                </div>
+                <div class="song-category">
+                    <h2>The Tortured Poets Department</h2>
+                    <label><input type="checkbox" value="fortnight"> fortnight</label>
+                    <label><input type="checkbox" value="Down Bad"> Down Bad</label>
+                    <label><input type="checkbox" value="loml"> loml</label>
+                    <label><input type="checkbox" value="Guilty as Sin"> Guilty as Sin</label>
+                    <label><input type="checkbox" value="I Can Do It with a Broke Heart"> I Can Do It with a Broke Heart</label>
+                    <label><input type="checkbox" value="So Long, London"> So Long, London</label>
+                    <label><input type="checkbox" value="The Alchemy"> The Alchemy</label>
+                    <!-- Add more songs here -->
+                </div>
+                <div class="song-category">
+                    <h2>Reputation</h2>
+                    <label><input type="checkbox" value="...Ready for It?"> ...Ready for It?</label>
+                    <label><input type="checkbox" value="End Game (feat. Ed Sheeran & Future)"> End Game (feat. Ed Sheeran & Future)</label>
+                    <label><input type="checkbox" value="I Did Something Bad"> I Did Something Bad</label>
+                    <label><input type="checkbox" value="King of My Heart"> King of My Heart</label>
+                    <label><input type="checkbox" value="Getaway Car"> Getaway Car</label>
+                    <label><input type="checkbox" value="Dress"> Dress</label>
+                    <label><input type="checkbox" value="Call It What You Want"> Call It What You Want</label>
+                
+                </div>
+                <div class="song-category">
+                    <h2>Lover</h2>
+                    <label><input type="checkbox" value="I Forgot That You Existed"> I Forgot That You Existed</label>
+                    <label><input type="checkbox" value="Cruel Summer"> Cruel Summer</label>
+                    <label><input type="checkbox" value="Lover"> Lover</label>
+                    <label><input type="checkbox" value="Cornelia Street"> Cornelia Street</label>
+                    <label><input type="checkbox" value="False God"> False God</label>
+                    <label><input type="checkbox" value="Afterglow"> Afterglow</label>
+                    <label><input type="checkbox" value="Daylight"> Daylight</label>
+                </div>
+                <div class="song-category">
+                    <h2>1989 (Taylor's Version)</h2>
+                    <label><input type="checkbox" value="Welcome To New York (Taylor's Version)"> Welcome To New York (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Blank Space (Taylor's Version)"> Blank Space (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Style (Taylor's Version)"> Style (Taylor's Version)</label>
+                    <label><input type="checkbox" value="New Romantics"> New Romantics (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Wildest Dreams"> Wildest Dreams (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Bad Blood (Taylor's Version)"> Bad Blood (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Clean (Taylor's Version)"> Clean (Taylor's Version)</label>
+                </div>
+                <div class="song-category">
+                    <h2>Fearless (Taylor's Version)</h2>
+                    <label><input type="checkbox" value="Fearless (Taylor's Version)"> Fearless (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Fifteen (Taylor's Version)"> Fifteen (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Breathe (Taylor's Version)"> Breathe (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Love Story (Taylor's Version)"> Love Story (Taylor's Version)</label>
+                    <label><input type="checkbox" value="You Belong With Me"> You Belong With Me (Taylor's Version)</label>
+                    <label><input type="checkbox" value="You're Not Sorry"> You're Not Sorry (Taylor's Version)</label>
+                    <label><input type="checkbox" value="White Horse (Taylor's Version)"> White Horse (Taylor's Version)</label>
+                </div>
+                <div class="song-category">
+                    <h2>Folklore</h2>
+                    <label><input type="checkbox" value="cardigan"> cardigan</label>
+                    <label><input type="checkbox" value="the1"> the1</label>
+                    <label><input type="checkbox" value="exile"> exile</label>
+                    <label><input type="checkbox" value="august"> august</label>
+                    <label><input type="checkbox" value="illicit affairs"> illicit affairs</label>
+                    <label><input type="checkbox" value="peace"> peace</label>
+                    <label><input type="checkbox" value="betty"> betty</label>
+                </div>
+                <div class="song-category">
+                    <h2>Red (Taylor's Version)</h2>
+                    <label><input type="checkbox" value="State Of Grace (Taylor's Version)"> State Of Grace (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Red (Taylor's Version)"> Red (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Treacherous (Taylor's Version)"> Treacherous (Taylor's Version)</label>
+                    <label><input type="checkbox" value="I Almost Do"> I Almost Do (Taylor's Version)</label>
+                    <label><input type="checkbox" value="All Too Well"> All Too Well (Taylor's Version)</label>
+                    <label><input type="checkbox" value="22 (Taylor's Version)"> 22 (Taylor's Version)</label>
+                    <label><input type="checkbox" value="Message in a Bottle (Taylor's Version)"> Message in a Bottle(Taylor's Version)</label>
+                </div>                               
+            </div>
+            <div class="playlist_buttons">
+                <button type="button" class="playlist-button" onclick="goBack()">Go Back</button>
+                <input type="submit" class="playlist-button" value="Create">
+            </div>
+        </form>
+        <div id="output"></div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
